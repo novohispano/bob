@@ -1,4 +1,4 @@
-"use strict";
+'use strict';
 
 var Bob = function() {
   var silence = function(saying) {
@@ -12,18 +12,18 @@ var Bob = function() {
   var question = function(saying) {
     var lastLetterIndex = saying.length - 1
 
-    return saying[lastLetterIndex] === "?"
+    return saying[lastLetterIndex] === '?'
   };
 
   this.hey = function(saying) {
     if (silence(saying)) {
-      return "Fine. Be that way!";
+      return 'Fine. Be that way!';
     } else if (shouting(saying)) {
-      return "Woah, chill out!";
+      return 'Woah, chill out!';
     } else if (question(saying)) {
-      return "Sure.";
+      return 'Sure.';
     } else {
-      return "Whatever.";
+      return 'Whatever.';
     };
   };
 
